@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/GTA 5 wasted  sound effect.wav-594698e58a50aba53cd76ef4a44c548a.sample"
+
+[deps]
+
+source_file="res://resources/sounds/small/GTA 5 wasted  sound effect.wav"
+dest_files=[ "res://.import/GTA 5 wasted  sound effect.wav-594698e58a50aba53cd76ef4a44c548a.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop=false
+compress/mode=0

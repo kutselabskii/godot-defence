@@ -18,11 +18,18 @@ func _process(delta):
 
 
 func _on_Bullet_area_entered(area):
-	alive = false
-	hide()
-	$CollisionShape2D.disabled = true
-	$Hitsound.play()
+	if area.get_collision_layer_bit(0):
+		alive = false
+		hide()
+		$CollisionShape2D.disabled = true
+		$Hitsound.play()
+	else:
+		if area.horizontal:
+			direction.y = -direction.y
+		else:
+			direction.x = -direction.x
 
 
 func die():
-	queue_free()
+	if !alive:
+		queue_free()

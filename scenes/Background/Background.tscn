@@ -1,8 +1,9 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://scenes/Background/Background.gd" type="Script" id=1]
 [ext_resource path="res://resources/textures/background/background_750x1334.png" type="Texture" id=2]
 [ext_resource path="res://resources/textures/truck/truck_001_static_276x163.png" type="Texture" id=3]
+[ext_resource path="res://scenes/Walls/Border.tscn" type="PackedScene" id=4]
 
 [node name="Background" type="Node"]
 
@@ -17,5 +18,21 @@ texture = ExtResource( 2 )
 position = Vector2( -6.68066, -308.984 )
 texture = ExtResource( 3 )
 _sections_unfolded = [ "Transform" ]
+
+[node name="Border_bottom" parent="." index="2" instance=ExtResource( 4 )]
+
+position = Vector2( 5.54916, -162.644 )
+scale = Vector2( 11.5347, 0.756803 )
+_sections_unfolded = [ "Collision", "Transform" ]
+
+[node name="Border_top" parent="." index="3" instance=ExtResource( 4 )]
+
+[node name="Border_left" parent="." index="4" instance=ExtResource( 4 )]
+
+position = Vector2( 322.448, 11.3369 )
+scale = Vector2( 0.344802, 20.4947 )
+_sections_unfolded = [ "Collision", "Transform" ]
+
+[node name="Border_right" parent="." index="5" instance=ExtResource( 4 )]
 
 

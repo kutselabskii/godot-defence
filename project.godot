@@ -35,6 +35,7 @@ key_mouse_left=[ Object(InputEventMouseButton,"resource_local_to_scene":false,"r
 
 2d_render/layer_1="Player"
 2d_render/layer_2="Bullet"
+2d_render/layer_3="Wall"
 
 [rendering]
 
